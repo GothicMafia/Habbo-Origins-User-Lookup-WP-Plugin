@@ -1,0 +1,154 @@
+/* --- Search Bar Styles --- */
+.habbo-profile-container {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the search form */
+#habbo-profile-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#habbo-username {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#habbo-profile-form button {
+    padding: 12px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#habbo-profile-form button:hover {
+    background-color: #b71c1c;
+}
+
+/* --- Search Result Styling (Larger Left-Aligned Avatar) --- */
+#habbo-profile-result {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-top: 20px; /* Add some space above the result */
+}
+
+#habbo-profile-result .habbo-avatar {
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 150px; /* Larger avatar */
+    height: auto;
+    border-radius: 12px;
+    background-color: #1c1c1c; /* Dark background for contrast */
+}
+
+#habbo-profile-info {
+    flex-grow: 1;
+}
+
+#habbo-profile-info h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#habbo-profile-info p {
+    font-size: 16px;
+    color: #d3eaf2;
+    margin: 5px 0;
+}
+
+#habbo-profile-info strong {
+    font-weight: bold;
+    color: white;
+}
+
+/* --- Badge Section Styling --- */
+.badge-section {
+    margin-top: 15px;
+}
+
+.badge-section p {
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* --- Profile List Styles --- */
+.habbo-user-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.habbo-user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align avatar and username to the center */
+    justify-content: center; /* Vertically center the content */
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habbo-user-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.habbo-user-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #2a2a2a; /* Match the background color of the container */
+}
+
+.habbo-user-name {
+    display: block;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center; /* Center the text */
+}
+
+.habbo-user-name:hover {
+    color: #d1d1d1;
+}
